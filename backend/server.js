@@ -56,7 +56,8 @@ app.get("/api/recommend", async (req, res) => {
     try {
       priceHistory = await fetchMandiPrices(crop, "Madhya Pradesh");
       if (priceHistory.length < 5) throw new Error("Not enough data points");
-    } catch {
+    } catch (err) {
+      console.error("Mandi price fetch failed:", err.message);
       priceHistory = mandiPriceHistoryMock[crop];
       pricesAreLive = false;
     }

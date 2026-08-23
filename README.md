@@ -17,3 +17,6 @@ npm run dev
 ## Tech
 React + Vite, Open-Meteo weather API, optional data.gov.in Mandi price API,
 recharts, jsPDF, Web Speech API.
+
+## Live Link
+sell-store-borrow-lavt27gmm-lopa-2s-projects.vercel.app
